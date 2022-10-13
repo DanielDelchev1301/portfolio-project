@@ -39,6 +39,10 @@
     animation-iteration-count: 1;
 }
 
+#aboutText h1:hover {
+    color: rgb(210, 209, 209);
+}
+
 @keyframes aboutText {
     0% { opacity: 0; font-size: 5px;}
     50% { opacity: 0.5; font-size: 45px;}
@@ -56,13 +60,17 @@
     animation-iteration-count: 1;
 }
 
+#aboutText p:hover {
+    color: rgb(201, 201, 201);
+}
+
 @keyframes aboutParagraph {
     0% { opacity: 0;}
     66% { opacity: 0;}
     100% { opacity: 1;}
 }
 
-section {
+#about-section {
     margin-top: 50px;
     text-align: center;
     background-color: rgb(36, 36, 36);
@@ -71,13 +79,17 @@ section {
     animation-iteration-count: 1;
 }
 
+#about-section:hover {
+    opacity: 0.9;
+}
+
 @keyframes section {
     0% { opacity: 0;}
     66% { opacity: 0;}
     100% { opacity: 1;}
 }
 
-section article {
+#about-section article {
     display: inline-block;
     padding: 20px 0px 20px 0px;
     margin: 10px 5px 10px 5px;
@@ -88,31 +100,31 @@ section article {
     border-radius: 5%;
 }
 
-section article:hover {
+#about-section article:hover {
     background-color: rgb(255, 80, 80);
     border-radius: 10%;
 }
 
-section article h2 {
+#about-section article h2 {
     margin: 10px 20px 0px 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid white;
 }
 
-section article h2:hover {
+#about-section article h2:hover {
     color: rgb(210, 210, 210);
     border-bottom: 1px solid rgb(210, 210, 210);
 }
 
-section article ul {
+#about-section article ul {
     width: 0%;
 }
 
-section article ul li:hover {
+#about-section article ul li:hover {
     color: rgb(133, 133, 133);
 }
 
-section article p:hover {
+#about-section article p:hover {
     color: rgb(133, 133, 133);
 }
 
