@@ -1,0 +1,121 @@
+#form-container {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-top: 60px;
+}
+
+#close-to-form {
+    height: 100%;
+    margin-left: 450px;
+    margin-right: 450px;
+    color: white;
+    background-color: rgb(41, 41, 41);
+    border: 1px solid;
+    animation-name: formPopUp;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes formPopUp {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#close-to-form h2 {
+    font-size: 30px;
+    padding-top: 10px;
+    animation-name: h2PopUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+#close-to-form h2:hover {
+    color: rgb(235, 203, 203);
+}
+
+@keyframes h2PopUp {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    75% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+#form-box .labels {
+    font-size: 20px;
+    margin-bottom: 10px;
+    animation-name: labelsPopUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+#form-box .labels:hover {
+    color: rgb(235, 203, 203);
+}
+
+@keyframes labelsPopUp {
+    0% { opacity: 0; }
+    75% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#form-box #label-for-description {
+    margin-top: 25px;
+}
+
+#form-box .labels,
+#form-box #email,
+#form-box #description {
+    display: block;
+}
+
+#form-box #email {
+    width: 50%;
+    margin-left: 153px;
+    animation-name: textAreaPopUp;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+#form-box #description {
+    font-size: 15px;
+    margin-left: 155px;
+    width: 50%;
+    animation-name: textAreaPopUp;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes textAreaPopUp {
+    0% { opacity: 0; }
+    66% { opacity: 0; }
+    82% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+#form-box a {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #4848ec;
+    border: 1px solid;
+    border-radius: 10%;
+    animation-name: ancorPopUp;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes ancorPopUp {
+    0% { opacity: 0; }
+    82% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#form-box a:hover {
+    background-color: white;
+    color: #4848ec;
+    border: 1px solid #4848ec;
+}
