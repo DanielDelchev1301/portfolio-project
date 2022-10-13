@@ -1,0 +1,125 @@
+#back-home {
+    margin: 20px;
+    font-size: 60px;
+    display: inline-block;
+    color: rgb(255, 67, 67);
+    text-decoration: none;
+    animation-name: homeAncorPopUp;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+#back-home:hover {
+    margin-left: 45px;
+    animation-name: homeAncorTransition;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes homeAncorTransition {
+    0% { margin-left: 20px; }
+    100% { margin-left: 45px; }
+}
+
+@keyframes homeAncorPopUp {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#aboutText h1 {
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    animation-name: aboutText;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes aboutText {
+    0% { opacity: 0; font-size: 5px;}
+    50% { opacity: 0.5; font-size: 45px;}
+    100% { opacity: 1; font-size: 30px;}
+}
+
+#aboutText p {
+    color: white;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    animation-name: aboutParagraph;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes aboutParagraph {
+    0% { opacity: 0;}
+    66% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+section {
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+    animation-name: section;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes section {
+    0% { opacity: 0;}
+    66% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+section article {
+    display: inline-block;
+    padding: 20px 0px 20px 0px;
+    margin: 10px 5px 10px 5px;
+    color: white;
+    width: 20%;
+    text-align: center;
+    background-color: rgb(255, 67, 67);
+    border-radius: 5%;
+}
+
+section article:hover {
+    background-color: rgb(255, 80, 80);
+    border-radius: 10%;
+}
+
+section article h2 {
+    margin: 10px 20px 0px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+section article h2:hover {
+    color: rgb(210, 210, 210);
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+section article ul {
+    width: 0%;
+}
+
+section article ul li:hover {
+    color: rgb(133, 133, 133);
+}
+
+section article p:hover {
+    color: rgb(133, 133, 133);
+}
+
+#goal {
+    margin-bottom: 71px;
+}
+
+#improve {
+    margin-bottom: 53px;
+}

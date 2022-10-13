@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+#main-container {
+    min-height: 100%;
+    position: relative;
+}
+
+#home-container {
+    margin-top: 150px;
+    display: inline-block;
+    margin-left: 400px;
+}
+
+#firstTitle {
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 120px;
+    margin: 5px;
+    animation-name: firstTitle;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+#secondTitle {
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 67, 67);
+    font-size: 120px;
+    margin: 5px;
+    animation-name: secondTitle;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+#thirdTitle {
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 67, 67);
+    font-size: 120px;
+    margin: 5px;
+    animation-name: thirdTitle;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+#firstTitle::after {
+    content: 'Hello.';
+}
+
+#firstTitle:hover::after {
+    margin-left: 25px;
+    animation-name: titleTransition;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    content: 'About';
+}
+
+#secondTitle::after {
+    content: 'I am';
+}
+
+#secondTitle:hover::after {
+    margin-left: 25px;
+    animation-name: titleTransition;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    content: 'Projects';
+}
+
+#thirdTitle::after {
+    content: 'Daniel';
+}
+
+#thirdTitle:hover::after {
+    margin-left: 25px;
+    animation-name: titleTransition;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    content: 'Contact';
+}
+
+@keyframes firstTitle {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes secondTitle {
+    0% { opacity: 0; }
+    33% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes thirdTitle {
+    0% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes titleTransition {
+    0% { margin-left: 0px; }
+    100% { margin-left: 25px; }
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+    color: rgb(122, 122, 122);
+}
+
+footer p {
+    margin: 30px;
+}
+
+footer p span {
+    color: rgb(255, 67, 67);
+}
