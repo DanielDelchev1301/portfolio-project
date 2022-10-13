@@ -117,9 +117,45 @@ footer {
 }
 
 footer p {
-    margin: 30px;
+    margin: 5px;
 }
 
 footer p span {
     color: rgb(255, 67, 67);
+}
+
+#facebook {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(41, 41, 118);
+    margin: 5px 5px 10px 5px;
+}
+
+#twitter {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(74, 197, 250);
+    margin: 5px 5px 10px 5px;
+}
+
+#linkedin {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(50, 113, 195);
+    margin: 5px 5px 10px 5px;
+}
+
+#github {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(218, 76, 48);
+    margin: 5px 5px 10px 5px;
 }
