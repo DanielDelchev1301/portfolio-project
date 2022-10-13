@@ -1,11 +1,24 @@
-<div>
+<div id="back-home-box">
     <a id="back-home" href="/">Home</a>
 </div>
+
+{{#if error}}
+    <div id="error">
+        <p>{{error}}</p>
+    </div>
+{{/if}}
+
+{{#if email}}
+    <div id="successful">
+        <p>Successful. Thank you {{email}}!</p>
+    </div>
+{{/if}}
+
 <div id="form-container">
 
     <div id="close-to-form">
-        
-        <h2>Send Email</h2> 
+
+        <h2>Send Email</h2>
 
         <form action="/contact" method="POST" id="form-box">
 
@@ -15,7 +28,7 @@
             <label class="labels" id="label-for-description" for="description">Description:</label>
             <textarea name="description" id="description" cols="30" rows="7"></textarea>
 
-            <a href="/contact">Send</a>
+            <button>Send</button>
         </form>
 
     </div>
