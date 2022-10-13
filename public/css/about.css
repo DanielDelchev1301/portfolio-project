@@ -1,4 +1,9 @@
+#back-home-box {
+    display: inline-block;
+}
+
 #back-home {
+    display: inline-block;
     margin: 20px;
     font-size: 60px;
     display: inline-block;

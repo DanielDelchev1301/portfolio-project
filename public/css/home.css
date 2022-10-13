@@ -159,3 +159,39 @@ footer p span {
     background-color: rgb(218, 76, 48);
     margin: 5px 5px 10px 5px;
 }
+
+#error {
+    display: inline-block;
+    font-size: 30px;
+    color: red;
+    width: 76%;
+    text-align: center;
+}
+
+#error p {
+    margin: 0;
+    font-size: 50px;
+}
+
+#error p:hover {
+    font-size: 49px;
+    color: rgb(210, 0, 0);
+}
+
+#successful {
+    display: inline-block;
+    font-size: 30px;
+    color: green;
+    width: 76%;
+    text-align: center;
+}
+
+#successful p {
+    margin: 0;
+    font-size: 50px;
+}
+
+#successful p:hover {
+    font-size: 49px;
+    color: rgb(0, 110, 0);
+}
