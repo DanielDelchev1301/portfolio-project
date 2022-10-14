@@ -37,30 +37,44 @@
 @keyframes h2PopUp {
     0% { opacity: 0; }
     50% { opacity: 0; }
-    75% { opacity: 1; }
+    60% { opacity: 1; }
     100% { opacity: 1; }
 }
 
 #form-box .labels {
     font-size: 20px;
     margin-bottom: 10px;
-    animation-name: labelsPopUp;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
 }
 
 #form-box .labels:hover {
     color: rgb(235, 203, 203);
 }
 
-@keyframes labelsPopUp {
+#email-label {
+    animation-name: emailLabel;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes emailLabel {
     0% { opacity: 0; }
-    75% { opacity: 0; }
+    60% { opacity: 0; }
+    70% { opacity: 1; }
     100% { opacity: 1; }
 }
 
-#form-box #label-for-description {
+#label-for-description {
     margin-top: 25px;
+    animation-name: descLabel;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes descLabel {
+    0% { opacity: 0; }
+    80% { opacity: 0; }
+    90% { opacity: 1; }
+    100% { opacity: 1; }
 }
 
 #form-box .labels,
@@ -69,27 +83,33 @@
     display: block;
 }
 
-#form-box #email {
+#email {
     width: 50%;
     margin-left: 153px;
-    animation-name: textAreaPopUp;
-    animation-duration: 3s;
+    animation-name: email;
+    animation-duration: 2s;
     animation-iteration-count: 1;
 }
 
-#form-box #description {
+@keyframes email {
+    0% { opacity: 0; }
+    70% { opacity: 0; }
+    80% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+#description {
     font-size: 15px;
     margin-left: 155px;
     width: 50%;
-    animation-name: textAreaPopUp;
-    animation-duration: 3s;
+    animation-name: desc;
+    animation-duration: 2s;
     animation-iteration-count: 1;
 }
 
-@keyframes textAreaPopUp {
+@keyframes desc {
     0% { opacity: 0; }
-    66% { opacity: 0; }
-    82% { opacity: 1; }
+    90% { opacity: 0; }
     100% { opacity: 1; }
 }
 
@@ -109,7 +129,8 @@
 
 @keyframes buttonPopUp {
     0% { opacity: 0; }
-    82% { opacity: 0; }
+    70% { opacity: 0; }
+    80% { opacity: 1; }
     100% { opacity: 1; }
 }
 

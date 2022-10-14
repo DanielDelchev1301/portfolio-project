@@ -60,13 +60,14 @@
     margin-left: 300px;
     margin-right: 300px;
     margin-top: 50px;
+    font-size: 19px;
     animation-name: aboutParagraph;
     animation-duration: 3s;
     animation-iteration-count: 1;
 }
 
 #aboutText p:hover {
-    color: rgb(201, 201, 201);
+    color: rgb(210, 209, 209);
 }
 
 @keyframes aboutParagraph {
@@ -126,11 +127,11 @@
 }
 
 #about-section article ul li:hover {
-    color: rgb(133, 133, 133);
+    color: rgb(210, 209, 209);
 }
 
 #about-section article p:hover {
-    color: rgb(133, 133, 133);
+    color: rgb(210, 209, 209);
 }
 
 #about-section #goal {

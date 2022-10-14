@@ -11,7 +11,7 @@ html, body {
 }
 
 #home-container {
-    margin-top: 150px;
+    margin-top: 70px;
     display: inline-block;
     margin-left: 400px;
 }
@@ -46,6 +46,17 @@ html, body {
     margin: 5px;
     animation-name: thirdTitle;
     animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+#fourthTitle {
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 67, 67);
+    font-size: 120px;
+    margin: 5px;
+    animation-name: fourthTitle;
+    animation-duration: 2s;
     animation-iteration-count: 1;
 }
 
@@ -85,6 +96,18 @@ html, body {
     content: 'Contact';
 }
 
+#fourthTitle::after {
+    content: 'Delchev';
+}
+
+#fourthTitle:hover::after {
+    margin-left: 25px;
+    animation-name: titleTransition;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    content: 'Certificates';
+}
+
 @keyframes firstTitle {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -99,6 +122,13 @@ html, body {
 @keyframes thirdTitle {
     0% { opacity: 0; }
     66% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fourthTitle {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    67% { opacity: 1; }
     100% { opacity: 1; }
 }
 
@@ -133,6 +163,11 @@ footer p span {
     margin: 5px 5px 10px 5px;
 }
 
+#facebook:hover {
+    background-color: rgb(41, 41, 118);
+    border-radius: 10%;
+}
+
 #twitter {
     display: inline-block;
     padding: 10px;
@@ -140,6 +175,11 @@ footer p span {
     color: white;
     background-color: rgb(74, 197, 250);
     margin: 5px 5px 10px 5px;
+}
+
+#twitter:hover {
+    background-color: rgb(60, 194, 251);
+    border-radius: 10%;
 }
 
 #linkedin {
@@ -151,6 +191,11 @@ footer p span {
     margin: 5px 5px 10px 5px;
 }
 
+#linkedin:hover {
+    background-color: rgb(42, 109, 197);
+    border-radius: 10%;
+}
+
 #github {
     display: inline-block;
     padding: 10px;
@@ -158,6 +203,11 @@ footer p span {
     color: white;
     background-color: rgb(218, 76, 48);
     margin: 5px 5px 10px 5px;
+}
+
+#github:hover {
+    background-color: rgb(216, 70, 40);
+    border-radius: 10%;
 }
 
 #error {

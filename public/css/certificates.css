@@ -1,9 +1,9 @@
-#projects-section {
+#certificates-section {
     margin-top: 100px;
     text-align: center;
 }
 
-#project-page-title {
+#certificate-page-title {
     color: white;
     text-align: center;
     margin-bottom: 0;
@@ -12,51 +12,66 @@
     font-size: 30px;
     margin-left: 100px;
     margin-right: 100px;
-    animation-name: projectText;
+    animation-name: certificateText;
     animation-duration: 2s;
     animation-iteration-count: 1;
 }
 
-@keyframes projectText {
+@keyframes certificateText {
     0% { opacity: 0; font-size: 5px;}
     50% { opacity: 0.5; font-size: 45px;}
     100% { opacity: 1; font-size: 30px;}
 }
 
-#project-page-title:hover {
+#certificate-page-title:hover {
     color: rgb(210, 209, 209);
 }
 
-#project-box {
+.certificate-box {
     border: 1px solid rgb(255, 67, 67);
-    background-image: url('/img/crypto-project.png');
-    display: inline-block;
+    display: inline-grid;
     width: 300px;
     height: 300px;
     margin-left: 10px;
     margin-right: 10px;
-    animation: projectBox;
+    animation: certificateBox;
     animation-duration: 3s;
     animation-iteration-count: 1;
 }
 
-@keyframes projectBox {
+#basic {
+    background-image: url('/img/basics-certificate.png');
+}
+
+#fundamentals {
+    background-image: url('/img/fundamentals-certificate.png');
+}
+
+#advanced {
+    background-image: url('/img/advanced-certificate.png');
+}
+
+#application {
+    background-image: url('/img/application-certificate.png');
+}
+
+@keyframes certificateBox {
     0% { opacity: 0; }
     66% { opacity: 0; }
     100% { opacity: 1; }
 }
 
-#project-box h2 {
+.certificate-box h2 {
     margin: 0;
     padding: 20px 0px 20px 0px;
     opacity: 0.5;
 }
 
-#project-box h2:hover {
+.certificate-box h2:hover {
     opacity: 0.7;
 }
 
-#project-box a {
+.certificate-box a {
     display: inline-block;
     margin-top: 190px;
     padding: 10px 0px 11px 0px;
@@ -66,7 +81,7 @@
     font-size: 20px;
 }
 
-#project-box a:hover {
+.certificate-box a:hover {
     animation-name: checkAncor;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -75,9 +90,4 @@
     padding: 68px 0px 66px 0px;
     opacity: 0.9; 
     color: greenyellow;
-}
-
-@keyframes checkAncor {
-    0% { opacity: 1; margin-top: 190px; padding: 10px 0px 11px 0px; color: rgb(255, 67, 67); }
-    100% { opacity: 0.9; margin-top: 80px; padding: 68px 0px 66px 0px; font-size: 30px; color: greenyellow; }
 }
